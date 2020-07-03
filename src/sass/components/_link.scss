@@ -1,0 +1,53 @@
+.link{
+  cursor: pointer;
+  font-family: $font-pattern;
+  text-decoration: none;
+  display: flex;
+  font-weight: $text-weight--medium;
+}
+
+.link--primary{
+  color:  $color--primary;
+  min-width: 100px;
+
+  svg{
+    @include icon-fill($color--primary, 0.7);
+  }
+}
+
+.link--secondary{
+  color: $color--primary;
+
+  svg{
+    @include icon-fill($color--primary, 0.7);
+  }
+}
+
+.link--inverted{
+  color: $text--inverted;
+
+  svg{
+    fill: $text--inverted;
+  }
+}
+
+.link--extra-small{
+  font-size: $text--extra-small;
+}
+
+.link--small{
+  font-size: $text--small;
+}
+
+.link--medium{
+  font-size: $text--medium;
+}
+
+.link--large{
+  font-size: $text--large;
+}
+
+.link--extra-large{
+  font-size: $text--extra-large;
+}
+

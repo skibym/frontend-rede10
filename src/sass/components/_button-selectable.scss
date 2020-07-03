@@ -1,0 +1,30 @@
+.button-selectable{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.button-selectable__item{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: $space--small;
+  border: $border--medium $color--line-system;
+  background-color: $background--clean;
+  cursor: pointer;
+  border-radius: 3px;
+  flex-grow: 1;
+  padding: $space--medium;
+  color: $text--secondary;
+
+  &:hover{
+    background-color: $background--light;
+  }
+
+  &.is-active{
+    border: $border--medium $color--primary;
+    background-color: $background--light;
+    color: $color--primary;
+    font-weight: $text-weight--large;
+  }
+}

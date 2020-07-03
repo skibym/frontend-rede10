@@ -1,0 +1,67 @@
+.pagination {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.pagination__item {
+  display: flex;
+  justify-content: center;
+  margin: $space--small;
+  background-color: $background--clean;
+  min-width: 35px;
+  color: $color--primary;
+  fill: $color--primary;
+  font-weight: $text-weight--large;
+  align-items: center;
+  height: 36px;
+  font-size: $text--medium;
+  font-family: $font-pattern;
+  padding: $space--small $space--medium;
+  border-radius: $border--radius;
+  cursor: pointer;
+  text-decoration: none;
+  border-style: none;
+  border-width: unset;
+
+  &.is-disabled {
+    background-color: $color--disabled;
+    color: lighten($text--primary, 20%);
+    border: none;
+    cursor: no-drop;
+    @include transition(background-color, color, $transition);
+
+    svg {
+      fill: lighten($text--primary, 20%);
+      @include transition(fill, $transition);
+    }
+
+    &:focus {
+      border: 0;
+      box-shadow: none;
+    }
+
+    &:hover {
+      background-color: $color--disabled;
+      color: lighten($text--primary, 20%);
+      fill: lighten($text--primary, 20%);
+    }
+  }
+
+  &.is-active {
+    background-color: $color--primary;
+    color: $text--inverted;
+    fill: $text--inverted;
+
+    &:hover {
+      background-color:  darken($color--primary, 10%);
+      color: $text--inverted;
+      fill: $text--inverted;
+    }
+  }
+
+  &:hover {
+    background-color: $background--light;
+
+  }
+}

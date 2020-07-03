@@ -1,0 +1,56 @@
+.box{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  border: $border--medium $color--line-system;
+  border-radius: $border--radius;
+  text-decoration: none;
+  overflow: hidden;
+}
+
+.box__container{
+  display: flex;
+  flex-wrap: wrap;
+  background-color: $background--clean;
+  width: 100%;
+}
+
+.box__container--inverted{
+  background-color: $background--light;
+  border-radius: $border--radius;
+}
+
+.box__footer{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: $space--medium;
+  background-color: $background--light;
+  width: 100%;
+}
+
+.box__container--form{
+   min-height: 300px;
+}
+
+.box--shadow{
+  box-shadow: $shadow;
+  border: none;
+}
+
+.box--no-border{
+  border: none;
+}
+
+.box__container--hover{
+  cursor: pointer;
+
+  &:hover{
+    background-color: $background--light;
+  }
+}
+
+.box--fixed{
+  position: fixed;
+  width: 383px;
+}

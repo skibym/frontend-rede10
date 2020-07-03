@@ -1,0 +1,54 @@
+.pill{
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  border-left: $border--medium $color--line-system;
+  border-right: $border--medium $color--line-system;
+  border-bottom: $border--medium $color--line-system;
+  padding: $space--small;
+  background-color: $background--clean;
+}
+
+.pill--no-border{
+  border: none;
+  padding: 0;
+}
+
+.pill__item{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $background--light;
+  color: $color--primary;
+  font-weight: $text-weight--medium;
+  font-size: $text--small;
+  border: none;
+  border-radius: $border--radius;
+  padding: $space--medium;
+  margin: $space--small;
+  cursor: pointer;
+
+  span{
+    flex-grow: 1;
+  }
+
+  svg{
+    fill: darken($color--line-system, 18%);
+  }
+
+  &:focus{
+    outline: none;
+    border: $border--small $text--inverted;
+    box-shadow: $shadow-focus $color--primary;
+  }
+
+  &:hover{
+    background-color: $color--secondary;
+    transition: background-color $transition;
+
+    .icon{
+      fill: #fff;
+    }
+  }
+}

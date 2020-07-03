@@ -1,0 +1,136 @@
+﻿// Charset
+@charset "utf-8";
+
+// **Cores**
+$color--primary: #0A2466;
+$color--secondary: #F3B313;
+
+$color--disabled: #C8D0E3;
+$color--line-system: #DEE1E3;
+$color--success: #8CC152;
+$color--error: #DA4453;
+$color--warning: #ffba3a;
+$color--inverted: #fff;
+
+// **Textos**
+//Tamanho do texto
+$text--extra-small: 10px;
+$text--small: 12px;
+$text--medium: 14px;
+$text--large: 18px;
+$text--extra-large: 22px;
+
+//Peso do texto
+$text-weight--extra-small: 300;
+$text-weight--small: 400;
+$text-weight--medium: 500;
+$text-weight--large: 600;
+$text-weight--extra-large: 700;
+
+//Cores do texto
+$text--primary: #4e4e4e;
+$text--secondary: #7E7E7E;
+$text--inverted: #fff;
+
+$title--primary: #0A2466;
+$title--secondary: #7E7E7E;
+$title--inverted: #fff;
+
+//Sombra do texto
+$text-shadow: 0 0 0 #353535, 0 0 1px transparent;
+$text-shadow--inverted: 1px 1px 2px rgba(255, 255, 255, 0.8);
+
+
+// **Backgrounds**
+$background--clean: #fff;
+$background--light: #F3F6FE;
+$background--medium: #ECF0FB;
+$background--strong: #0A2466;
+
+// **Bordas**
+$border--radius: 3px;
+$border--small: 1px solid;
+$border--medium: 2px solid;
+$border--large: 3px solid;
+
+// **Sombras**
+$shadow: 2px 2px 8px 0px rgba(0,0,0,.1);
+$shadow-focus: 0 0 0 2px;
+
+// **Transições**
+$transition: .2s linear;
+
+// **Espaçamento**
+$space--extra-small: 2px;
+$space--small: 4px;
+$space--medium: 8px;
+$space--large: 16px;
+$space--extra-large: 32px;
+
+//* Z-index *//
+$visible: 1;
+$more-visible: 2;
+$most-visible: 3;
+
+// **Hover**
+$hover--inverted: rgb(51, 51, 51);
+
+// Abstracts
+@import "abstracts/_mixins";
+
+// Base
+@import "base/_grid",
+        "base/_reset",
+        "base/_media",
+        "base/_typography";
+
+// Components
+@import "components/_button",
+        "components/_button-text",
+        "components/_input",
+        "components/_label",
+        "components/_tab",
+        "components/_flap",
+        "components/_link",
+        "components/_link-button",
+        "components/_align",
+        "components/_alert",
+        "components/_title",
+        "components/_text",
+        "components/_about",
+        "components/_breadcrumb",
+        "components/_form",
+        "components/_info",
+        "components/_nav",
+        "components/_box",
+        "components/_combobox",
+        "components/_pill",
+        "components/_pagination",
+        "components/_button-selectable",
+        "components/_image",
+        "components/_icon",
+        "components/_margin",
+        "components/_padding",
+        "components/_scrollable-box",
+        "components/_highlights",
+        "components/_loading",
+        "components/_map",
+        "components/_search",
+        "components/_galery",
+        "components/_n-progress",
+        "components/_toggle-group",
+        "components/_hamburguer",
+        "components/_toggle";
+
+// Layout
+@import "layout/_header",
+        "layout/_footer",
+        "layout/_partners";
+
+
+// Pages
+.full-height{
+  height: 100vh;
+}
+
+

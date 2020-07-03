@@ -1,0 +1,24 @@
+.scrollable-box{
+  overflow-y: auto;
+  align-content: flex-start;
+}
+
+.scrollable-box--extra-small{
+  height: 54px;
+}
+
+.scrollable-box--small{
+  height: 90px;
+}
+
+.scrollable-box--medium{
+  height: 250px;
+}
+
+.scrollable-box--large{
+  height: 576px;
+}
+
+.scrollable-box--extra-large{
+  height: 1152px;
+}

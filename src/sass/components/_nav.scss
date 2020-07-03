@@ -1,0 +1,52 @@
+.nav{
+  display: none;
+  flex-direction: column;
+  width: 100%;
+  position: absolute;
+  right: 0;
+  top: 88px;
+  flex-wrap: wrap;
+  padding: $space--medium;
+  justify-content: flex-end;
+  align-items: center;
+  z-index: $visible;
+  background-color: $background--medium;
+
+
+  &.is-active{
+    display: flex;
+  }
+
+  @media #{$medium-devices} {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: unset;
+    background-color: unset;
+  }
+}
+
+.nav__item{
+  font-family: $font-pattern;
+  font-size: $text--medium;
+  color: $color--primary;
+  padding: $space--large;
+  font-weight: $text-weight--medium;
+  text-decoration: none;
+
+  &:hover{
+    font-weight: $text-weight--large;
+  }
+}
+
+.nav__item--inverted{
+  color: $color--inverted;
+}
+
+.nav__icon{
+  fill: $color--primary;
+
+  @media #{$medium-devices} {
+    display: none;
+  }
+}

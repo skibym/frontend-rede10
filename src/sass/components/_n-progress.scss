@@ -1,0 +1,24 @@
+.n-progress{
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: $space--extra-small;
+  width: 0%;
+  background-color: $color--primary;
+  animation: nprogress 4s linear infinite;
+  z-index: $more-visible;
+  box-shadow: $shadow;
+
+}
+
+// @keyframes nprogress{
+
+//   0%{
+//     width: 0;
+//   }
+
+//   100%{
+//     width: 100%;
+//   }
+// }

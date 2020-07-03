@@ -1,0 +1,72 @@
+.toggle-group {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  position: relative;
+}
+
+.toggle-group__box {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-between;
+
+  @media #{$phones} {
+    flex-wrap: nowrap;
+  }
+}
+
+.toggle-group__item {
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  height: 36px;
+  font-weight: $text-weight--medium;
+  font-size: $text--small;
+  font-family: $font-pattern;
+  padding: $space--small $space--medium;
+  border-radius: $border--radius;
+  margin-bottom: $space--small;
+  justify-content: center;
+  cursor: pointer;
+  border: $border--medium $color--line-system;
+  color: $text--secondary;
+  background-color: $background--light ;
+
+  &:focus{
+    outline: none;
+  }
+
+  &.is-active {
+    background-color: $background--clean;
+    color: $color--primary;
+    font-weight: $text-weight--large;
+    font-size: $text--medium;
+    border: $border--medium $color--primary;
+  }
+
+  &.is-disabled {
+    background-color: $color--disabled;
+    color: $text--primary;
+    cursor: no-drop;
+    @include transition(background-color, color, $transition);
+
+    svg {
+      fill: $text--primary;
+      @include transition(fill, $transition);
+    }
+
+    &:focus {
+      border: 0;
+      box-shadow: none;
+    }
+
+    &:hover {
+      background-color: $color--disabled;
+    }
+  }
+}
+
+.toggle-group__box--wrap{
+   flex-wrap: wrap;
+}

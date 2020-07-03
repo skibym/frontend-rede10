@@ -1,0 +1,27 @@
+.footer {
+  background-color: $color--primary;
+  padding-bottom: $space--extra-large;
+
+  .col {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .title{
+    text-align: center;
+  }
+
+  @media #{$tablets} {
+    .col {
+      justify-content: unset;
+      align-items: unset;
+    }
+
+    .title{
+      text-align: unset;
+    }
+
+  }
+
+
+}

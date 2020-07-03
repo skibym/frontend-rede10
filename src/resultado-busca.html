@@ -1,0 +1,773 @@
+<!doctype html>
+<html lang="pt-BR" class="full-height">
+
+<head>
+  <title>Home Rede 10</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800" rel="stylesheet">
+  <link rel="stylesheet" href="./css/main.default.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__content">
+      <div class="row">
+        <div class="col col--sd-12 col--md-3 col--between align--middle">
+          <a href="">
+            <img src="images/logo.svg" class="image image--logo padding--medium" alt="">
+          </a>
+          <a href="" class="nav__icon align--right">
+            <svg role="img" class="icon icon--extra-large">
+              <use xlink:href="images/icons/actions-sprite.svg#menu"></use>
+            </svg>
+          </a>
+        </div>
+        <div class="col col--sd-12 col--md-9">
+          <nav class="nav ">
+            <a ref="#" class="nav__item text-shadows--inverted">
+              ALUGUEL
+            </a>
+            <a ref="#" class="nav__item text-shadows--inverted">
+              VENDA
+            </a>
+            <a ref="#" class="nav__item text-shadows--inverted">
+              LANÇAMENTOS
+            </a>
+            <a href="" class="link-button link-button--secondary margin-horizontal--medium">
+              ANUNCIE SEU IMÓVEL
+            </a>
+          </nav>
+        </div>
+      </div>
+  </header>
+  <div class="row">
+    <div class="col col--sd-12 padding--small padding-vertical--large">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <ul class="breadcrumb__box">
+          <li>
+            <a title="Home" href="#">
+              Home
+            </a>
+          </li>
+          <li class="is-active" aria-current="page">
+            <span>
+              Resultado da busca
+            </span>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <section>
+    <div class="row">
+      <div class="col col--sd-12 col--tb-4 col--md-3 padding-horizontal--small margin-bottom--medium">
+        <div class="box box--no-border ">
+          <div class="box__container box__container--inverted padding--medium">
+            <div class="row">
+              <div class="col col--sd-12 padding-bottom--large">
+                <div class="title title--primary title--medium">
+                  Filtros
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col col--sd-12">
+                <div class="row">
+                  <div class="col col--sd-12">
+                    <span class="label label--description">
+                      Cidade
+                    </span>
+                  </div>
+                </div>
+                <div class="input">
+                  <input class="input__item" id="Name" name="Name" type="text" placeholder="Uberlândia">
+                  <span class="text text--error">
+                  </span>
+                </div>
+              </div>
+              <div class="col col--sd-12">
+                <div class="row">
+                  <div class="col col--sd-12">
+                    <span class="label label--description">
+                      Bairro
+                    </span>
+                  </div>
+                </div>
+                <div class="input">
+                  <input class="input__item" id="Name" name="Name" type="text" placeholder="Uberlândia">
+                  <span class="text text--error">
+                  </span>
+                </div>
+              </div>
+              <div class="col col--sd-12">
+                <div class="row">
+                  <div class="col col--sd-12">
+                    <span class="label label--description">
+                      Tipo
+                    </span>
+                  </div>
+                </div>
+                <div class="input">
+                  <input class="input__item" id="Name" name="Name" type="text" placeholder="Uberlândia">
+                  <span class="text text--error">
+                  </span>
+                </div>
+              </div>
+              <div class="col col--sd-12">
+                <div class="toggle-group">
+                  <div class="col col--sd-12">
+                    <div class="row">
+                      <div class="col col--sd-12">
+                        <label for="" class="label label--description">
+                          Quartos
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col col--sd-12">
+                    <div class="toggle-group__box">
+                      <button class="toggle-group__item is-active margin-horizontal--extra-small">1</button>
+                      <button class="toggle-group__item margin-horizontal--extra-small">2</button>
+                      <button class="toggle-group__item margin-horizontal--extra-small">3</button>
+                      <button class="toggle-group__item margin-horizontal--extra-small">4</button>
+                      <button class="toggle-group__item margin-horizontal--extra-small">5 +</button>
+                    </div>
+                  </div>
+                  <span class="text text--error"></span>
+                </div>
+              </div>
+              <div class="col col--sd-12">
+                <div class="toggle-group">
+                  <div class="col col--sd-12">
+                    <div class="row">
+                      <div class="col col--sd-12">
+                        <label for="" class="label label--description">
+                          Banheiros
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col col--sd-12">
+                    <div class="toggle-group__box">
+                      <button class="toggle-group__item is-active margin-horizontal--extra-small">1</button>
+                      <button class="toggle-group__item margin-horizontal--extra-small">2</button>
+                      <button class="toggle-group__item margin-horizontal--extra-small">3</button>
+                      <button class="toggle-group__item margin-horizontal--extra-small">4</button>
+                      <button class="toggle-group__item margin-horizontal--extra-small">5 +</button>
+                    </div>
+                  </div>
+                  <span class="text text--error"></span>
+                </div>
+              </div>
+              <div class="col col--sd-12">
+                <div class="toggle-group">
+                  <div class="col col--sd-12">
+                    <div class="row">
+                      <div class="col col--sd-12">
+                        <label for="" class="label label--description">
+                          Vagas de garagem
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col col--sd-12">
+                    <div class="toggle-group__box">
+                      <button class="toggle-group__item is-active margin-horizontal--extra-small">1</button>
+                      <button class="toggle-group__item margin-horizontal--extra-small">2</button>
+                      <button class="toggle-group__item margin-horizontal--extra-small">3</button>
+                      <button class="toggle-group__item margin-horizontal--extra-small">4</button>
+                      <button class="toggle-group__item margin-horizontal--extra-small">5 +</button>
+                    </div>
+                  </div>
+                  <span class="text text--error"></span>
+                </div>
+              </div>
+              <div class="col col--sd-12">
+                <div class="toggle-group ">
+                  <div class="col col--sd-12">
+                    <div class="row">
+                      <div class="col col--sd-12">
+                        <label for="" class="label label--description">
+                          Caracteristica
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col col--sd-12">
+                    <div class="toggle-group__box toggle-group__box--wrap">
+                      <button class="toggle-group__item is-active margin-horizontal--extra-small">
+                        Piscina
+                      </button>
+                      <button class="toggle-group__item margin-horizontal--extra-small">
+                        Churrasqueira
+                      </button>
+                      <button class="toggle-group__item margin-horizontal--extra-small">
+                        Portaria
+                      </button>
+                      <button class="toggle-group__item margin-horizontal--extra-small">
+                        Salão de festas
+                      </button>
+                      <button class="toggle-group__item margin-horizontal--extra-small">
+                        Academia
+                      </button>
+                      <button class="toggle-group__item margin-horizontal--extra-small">
+                        Cameras
+                      </button>
+                      <button class="toggle-group__item margin-horizontal--extra-small">
+                        Bicicletário
+                      </button>
+                    </div>
+                  </div>
+                  <span class="text text--error"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col col--sd-12 col--tb-8 col--md-9 padding-horizontal--small">
+        <div class="row">
+          <div class="col col--sd-12 padding-bottom--medium">
+            <h2 class="title title--primary title--large">
+              Resultados em Uberlândia - Nossa senhora aparecida
+            </h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col col--sd-12 padding-vertical--medium">
+            <div class="col col--sd-12 padding-horizontal--small ">
+              <label for="beginDate" class="label label--description">
+                Filtros aplicados
+              </label>
+            </div>
+            <div class="pill pill--no-border">
+              <button type="button" class="pill__item">
+                <div class="text text--small text--primary">
+                  Minha casa minha vida
+                </div>
+                <svg role="img" class="icon margin-left--small icon--small">
+                  <use xlink:href="images/icons/actions-sprite.svg#close"></use>
+                </svg>
+              </button>
+              <button type="button" class="pill__item">
+                <div class="text text--small text--primary">Minha vida</div>
+                <svg role="img" class="icon margin-left--small icon--small">
+                  <use xlink:href="images/icons/actions-sprite.svg#close"></use>
+                </svg>
+              </button>
+              <button type="button" class="pill__item">
+                <div class="text text--small text--primary">Avocado</div>
+                <svg role="img" class="icon margin-left--small icon--small">
+                  <use xlink:href="images/icons/actions-sprite.svg#close"></use>
+                </svg>
+              </button>
+              <button type="button" class="pill__item">
+                <div class="text text--small text--primary">Abacate</div>
+                <svg role="img" class="icon margin-left--small icon--small">
+                  <use xlink:href="images/icons/actions-sprite.svg#close"></use>
+                </svg>
+              </button>
+              <button type="button" class="pill__item">
+                <div class="text text--small text--primary">Guaca mole</div>
+                <svg role="img" class="icon margin-left--small icon--small">
+                  <use xlink:href="images/icons/actions-sprite.svg#close"></use>
+                </svg>
+              </button>
+              <button type="button" class="pill__item">
+                <div class="text text--small text--primary">
+                  Minha casa minha vida
+                </div>
+                <svg role="img" class="icon margin-left--small icon--small">
+                  <use xlink:href="images/icons/actions-sprite.svg#close"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col col--sd-12">
+            <div class="tab">
+              <div class="tab__header">
+                <button class="tab__header-item is-active">
+                  <span class="text text--large">Alugar</span>
+                </button>
+                <button class="tab__header-item">
+                  <span class="text text--large">Comprar</span>
+                </button>
+              </div>
+              <div class="tab__container">
+                <div class="tab__container-item">
+                  <div class="row padding-bottom--large">
+                    <div class="col col--sd-12 col--ld-5 col--stretch padding--small align--middle ">
+                      <div class="title title--primary title--extra-small">
+                        5 imóveis encontrados
+                      </div>
+                    </div>
+                    <div class="col col--sd-12 col--ld-7 padding--smal align--right ">
+                      <div class="button-selectable">
+                        <button type="button" title="3 meses" class="button-selectable__item">
+                          <span class="text text--medium">
+                            Valor crescente
+                          </span>
+                        </button>
+                        <button type="button" title="6 meses" class="button-selectable__item is-active">
+                          <span class="text text--medium">
+                            Valor decrescente
+                          </span>
+                        </button>
+                        <button type="button" title="12 meses" class="button-selectable__item">
+                          <span class="text text--medium">
+                            Tipo
+                          </span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col col--sd-12 col--tb-6 col--ld-12 padding--small padding-bottom--large">
+                    <div class="box box--no-border">
+                      <div class="box__container box__container--inverted box__container--hover">
+                        <div class="row">
+                          <div class="col col--sd-12 col--ld-4">
+                            <div class="galery">
+                              <div class="galery__image">
+                                <img src="images/house.jpg" alt="" class="image ">
+                              </div>
+                              <div class="galery__controls">
+                                <button type="button" class="button--icon galery__item">
+                                  <svg role="img" class="icon icon--large icon--inverted margin-left--small">
+                                    <use xlink:href="images/icons/actions-sprite.svg#chevron-left"></use>
+                                  </svg>
+                                </button>
+                                <a href="https://www.google.com.br/" class="galery__item galery__link"></a>
+                                <button type="button" class="button--icon galery__item">
+                                  <svg role="img" class="icon icon--large icon--inverted margin-left--small">
+                                    <use xlink:href="images/icons/actions-sprite.svg#chevron-right"></use>
+                                  </svg>
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col col--sd-12 col--ld-8 col--stretch padding--medium">
+                            <div class="row">
+                              <div class="col col--sd-9">
+                                <h3 class="title title--small title--secondary">
+                                  Nossa senha aparecida
+                                </h3>
+                              </div>
+                              <div class="col col--sd-3 align--right">
+                                <a href="#">
+                                  <svg role="img" class="icon icon--medium icon--primary padding-left--medium">
+                                    <use xlink:href="images/icons/actions-sprite.svg#favorite"></use>
+                                  </svg>
+                                </a>
+                                <a href="#">
+                                  <svg role="img" class="icon icon--medium icon--primary padding-left--medium">
+                                    <use xlink:href="images/icons/actions-sprite.svg#share"></use>
+                                  </svg>
+                                </a>
+                              </div>
+                              <div class="col col--sd-12 padding-vertical--small">
+                                <div class="text text--medium text--bold text--primary">
+                                  Apartamento
+                                </div>
+                              </div>
+                              <div class="col col--sd-12 padding-vertical--medium">
+                                <div class="text text--secondary text--medium ">
+                                  1 Suíte, 2 Banheiros, 2 Quartos, 2 Garagens.
+                                </div>
+                              </div>
+                              <div class="col col--sd-12 padding-vertical--small">
+                                <div class="text text--secondary text--medium">
+                                  Área construída: 29.28 m², Área total: 48.06 m², Valor do Condomínio: R$ 120.00,
+                                  Quartos: 1, Suítes: 1, Banheiros: 1, Garagens: 1, Salas: 1.
+                                </div>
+                              </div>
+                              <div class="col col--sd-4  col--ld-6 col--stretch padding-top--large align--bottom">
+                                <img src="images/logo.svg" class="image image--small" alt="">
+                              </div>
+                              <div class="col col--sd-12 col--pn-12 col--ld-6 col--stretch padding-top--large">
+                                <div class="col col--sd-12 align--right">
+                                  <span class="text text--secondary text--medium align--bottom ">
+                                    Código
+                                  </span>
+                                  <div class="text text--primary text--medium text--bold padding-horizontal--small ">
+                                    2345678
+                                  </div>
+                                </div>
+                                <div class="col col--sd-12 align--right">
+                                  <div class="title title--primary title--small title--right">
+                                    Venda R$ 170.000,00
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col col--sd-12 col--tb-6 col--ld-12 padding--small padding-bottom--large">
+                    <div class="box box--no-border">
+                      <div class="box__container box__container--inverted box__container--hover">
+                        <div class="row">
+                          <div class="col col--sd-12 col--ld-4">
+                            <div class="galery">
+                              <div class="galery__image">
+                                <img src="images/house.jpg" alt="" class="image ">
+                              </div>
+                              <div class="galery__controls">
+                                <button type="button" class="button--icon galery__item">
+                                  <svg role="img" class="icon icon--large icon--inverted margin-left--small">
+                                    <use xlink:href="images/icons/actions-sprite.svg#chevron-left"></use>
+                                  </svg>
+                                </button>
+                                <a href="https://www.google.com.br/" class="galery__item galery__link"></a>
+                                <button type="button" class="button--icon galery__item">
+                                  <svg role="img" class="icon icon--large icon--inverted margin-left--small">
+                                    <use xlink:href="images/icons/actions-sprite.svg#chevron-right"></use>
+                                  </svg>
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col col--sd-12 col--ld-8 col--stretch padding--medium">
+                            <div class="row">
+                              <div class="col col--sd-9">
+                                <h3 class="title title--small title--secondary">
+                                  Nossa senha aparecida
+                                </h3>
+                              </div>
+                              <div class="col col--sd-3 align--right">
+                                <a href="#">
+                                  <svg role="img" class="icon icon--medium icon--primary padding-left--medium">
+                                    <use xlink:href="images/icons/actions-sprite.svg#favorite"></use>
+                                  </svg>
+                                </a>
+                                <a href="#">
+                                  <svg role="img" class="icon icon--medium icon--primary padding-left--medium">
+                                    <use xlink:href="images/icons/actions-sprite.svg#share"></use>
+                                  </svg>
+                                </a>
+                              </div>
+                              <div class="col col--sd-12 padding-vertical--small">
+                                <div class="text text--medium text--bold text--primary">
+                                  Apartamento
+                                </div>
+                              </div>
+                              <div class="col col--sd-12 padding-vertical--medium">
+                                <div class="text text--secondary text--medium ">
+                                  1 Suíte, 2 Banheiros, 2 Quartos, 2 Garagens.
+                                </div>
+                              </div>
+                              <div class="col col--sd-12 padding-vertical--small">
+                                <div class="text text--secondary text--medium">
+                                  Área construída: 29.28 m², Área total: 48.06 m², Valor do Condomínio: R$ 120.00,
+                                  Quartos: 1, Suítes: 1, Banheiros: 1, Garagens: 1, Salas: 1.
+                                </div>
+                              </div>
+                              <div class="col col--sd-4  col--ld-6 col--stretch padding-top--large align--bottom">
+                                <img src="images/logo.svg" class="image image--small" alt="">
+                              </div>
+                              <div class="col col--sd-12 col--pn-12 col--ld-6 col--stretch padding-top--large">
+                                <div class="col col--sd-12 align--right">
+                                  <span class="text text--secondary text--medium align--bottom ">
+                                    Código
+                                  </span>
+                                  <div class="text text--primary text--medium text--bold padding-horizontal--small ">
+                                    2345678
+                                  </div>
+                                </div>
+                                <div class="col col--sd-12 align--right">
+                                  <div class="title title--primary title--small title--right">
+                                    Venda R$ 170.000,00
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col col--sd-12 col--tb-6 col--ld-12 padding--small padding-bottom--large">
+                    <div class="box box--no-border">
+                      <div class="box__container box__container--inverted box__container--hover">
+                        <div class="row">
+                          <div class="col col--sd-12 col--ld-4">
+                            <div class="galery">
+                              <div class="galery__image">
+                                <img src="images/house.jpg" alt="" class="image ">
+                              </div>
+                              <div class="galery__controls">
+                                <button type="button" class="button--icon galery__item">
+                                  <svg role="img" class="icon icon--large icon--inverted margin-left--small">
+                                    <use xlink:href="images/icons/actions-sprite.svg#chevron-left"></use>
+                                  </svg>
+                                </button>
+                                <a href="https://www.google.com.br/" class="galery__item galery__link"></a>
+                                <button type="button" class="button--icon galery__item">
+                                  <svg role="img" class="icon icon--large icon--inverted margin-left--small">
+                                    <use xlink:href="images/icons/actions-sprite.svg#chevron-right"></use>
+                                  </svg>
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col col--sd-12 col--ld-8 col--stretch padding--medium">
+                            <div class="row">
+                              <div class="col col--sd-9">
+                                <h3 class="title title--small title--secondary">
+                                  Nossa senha aparecida
+                                </h3>
+                              </div>
+                              <div class="col col--sd-3 align--right">
+                                <a href="#">
+                                  <svg role="img" class="icon icon--medium icon--primary padding-left--medium">
+                                    <use xlink:href="images/icons/actions-sprite.svg#favorite"></use>
+                                  </svg>
+                                </a>
+                                <a href="#">
+                                  <svg role="img" class="icon icon--medium icon--primary padding-left--medium">
+                                    <use xlink:href="images/icons/actions-sprite.svg#share"></use>
+                                  </svg>
+                                </a>
+                              </div>
+                              <div class="col col--sd-12 padding-vertical--small">
+                                <div class="text text--medium text--bold text--primary">
+                                  Apartamento
+                                </div>
+                              </div>
+                              <div class="col col--sd-12 padding-vertical--medium">
+                                <div class="text text--secondary text--medium ">
+                                  1 Suíte, 2 Banheiros, 2 Quartos, 2 Garagens.
+                                </div>
+                              </div>
+                              <div class="col col--sd-12 padding-vertical--small">
+                                <div class="text text--secondary text--medium">
+                                  Área construída: 29.28 m², Área total: 48.06 m², Valor do Condomínio: R$ 120.00,
+                                  Quartos: 1, Suítes: 1, Banheiros: 1, Garagens: 1, Salas: 1.
+                                </div>
+                              </div>
+                              <div class="col col--sd-4  col--ld-6 col--stretch padding-top--large align--bottom">
+                                <img src="images/logo.svg" class="image image--small" alt="">
+                              </div>
+                              <div class="col col--sd-12 col--pn-12 col--ld-6 col--stretch padding-top--large">
+                                <div class="col col--sd-12 align--right">
+                                  <span class="text text--secondary text--medium align--bottom ">
+                                    Código
+                                  </span>
+                                  <div class="text text--primary text--medium text--bold padding-horizontal--small ">
+                                    2345678
+                                  </div>
+                                </div>
+                                <div class="col col--sd-12 align--right">
+                                  <div class="title title--primary title--small title--right">
+                                    Venda R$ 170.000,00
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col col--sd-12 col--tb-6 col--ld-12 padding--small padding-bottom--large">
+                    <div class="box box--no-border">
+                      <div class="box__container box__container--inverted box__container--hover">
+                        <div class="row">
+                          <div class="col col--sd-12 col--ld-4">
+                            <div class="galery">
+                              <div class="galery__image">
+                                <img src="images/house.jpg" alt="" class="image ">
+                              </div>
+                              <div class="galery__controls">
+                                <button type="button" class="button--icon galery__item">
+                                  <svg role="img" class="icon icon--large icon--inverted margin-left--small">
+                                    <use xlink:href="images/icons/actions-sprite.svg#chevron-left"></use>
+                                  </svg>
+                                </button>
+                                <a href="https://www.google.com.br/" class="galery__item galery__link"></a>
+                                <button type="button" class="button--icon galery__item">
+                                  <svg role="img" class="icon icon--large icon--inverted margin-left--small">
+                                    <use xlink:href="images/icons/actions-sprite.svg#chevron-right"></use>
+                                  </svg>
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col col--sd-12 col--ld-8 col--stretch padding--medium">
+                            <div class="row">
+                              <div class="col col--sd-9">
+                                <h3 class="title title--small title--secondary">
+                                  Nossa senha aparecida
+                                </h3>
+                              </div>
+                              <div class="col col--sd-3 align--right">
+                                <a href="#">
+                                  <svg role="img" class="icon icon--medium icon--primary padding-left--medium">
+                                    <use xlink:href="images/icons/actions-sprite.svg#favorite"></use>
+                                  </svg>
+                                </a>
+                                <a href="#">
+                                  <svg role="img" class="icon icon--medium icon--primary padding-left--medium">
+                                    <use xlink:href="images/icons/actions-sprite.svg#share"></use>
+                                  </svg>
+                                </a>
+                              </div>
+                              <div class="col col--sd-12 padding-vertical--small">
+                                <div class="text text--medium text--bold text--primary">
+                                  Apartamento
+                                </div>
+                              </div>
+                              <div class="col col--sd-12 padding-vertical--medium">
+                                <div class="text text--secondary text--medium ">
+                                  1 Suíte, 2 Banheiros, 2 Quartos, 2 Garagens.
+                                </div>
+                              </div>
+                              <div class="col col--sd-12 padding-vertical--small">
+                                <div class="text text--secondary text--medium">
+                                  Área construída: 29.28 m², Área total: 48.06 m², Valor do Condomínio: R$ 120.00,
+                                  Quartos: 1, Suítes: 1, Banheiros: 1, Garagens: 1, Salas: 1.
+                                </div>
+                              </div>
+                              <div class="col col--sd-4  col--ld-6 col--stretch padding-top--large align--bottom">
+                                <img src="images/logo.svg" class="image image--small" alt="">
+                              </div>
+                              <div class="col col--sd-12 col--pn-12 col--ld-6 col--stretch padding-top--large">
+                                <div class="col col--sd-12 align--right">
+                                  <span class="text text--secondary text--medium align--bottom ">
+                                    Código
+                                  </span>
+                                  <div class="text text--primary text--medium text--bold padding-horizontal--small ">
+                                    2345678
+                                  </div>
+                                </div>
+                                <div class="col col--sd-12 align--right">
+                                  <div class="title title--primary title--small title--right">
+                                    Venda R$ 170.000,00
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col col--sd-12 margin-vertical--large">
+                    <div class="pagination">
+                      <button type="button" class="pagination__item is-disabled" disabled>
+                        <svg role="img" class="icon margin-right--small icon--extra-small">
+                          <use xlink:href="images/icons/actions-sprite.svg#chevron-left"></use>
+                        </svg>
+                        <span>Anterior</span>
+                      </button>
+                      <button type="button" class="pagination__item"><span>1</span></button>
+                      <button type="button" class="pagination__item"><span>2</span></button>
+                      <button type="button" class="pagination__item"><span>3</span></button>
+                      <button type="button" class="pagination__item is-active">
+                        <span>Próximo</span>
+                        <svg role="img" class="icon margin-left--small icon--extra-small">
+                          <use xlink:href="images/icons/actions-sprite.svg#chevron-right"></use>
+                        </svg>
+                      </button>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="row">
+      <div class="col col--sd-12 col--tb-6 col--md-3 padding--medium">
+        <a href="" class="logo">
+          <img src="images/logo.svg" class="image image--logo padding-top--extra-large padding-bottom--large" alt="">
+        </a>
+        <div class="col col--sd-12 padding-vertical--medium">
+          <div class="text text--inverted text--medium">
+            (34) 3211-9955
+          </div>
+        </div>
+        <div class="col col--sd-12 padding-vertical--medium">
+          <div class="text text--inverted text--medium">
+            rede10@rede10imoveis.com
+          </div>
+        </div>
+      </div>
+      <div class="col col--sd-12 col--tb-6 col--md-3 padding--medium">
+        <div class="row">
+          <div class="col col--sd-12 padding-top--extra-large padding-bottom--large">
+            <div class="title title--inverted title--medium">
+              A empresa
+            </div>
+          </div>
+          <div class="col col--sd-12 margin-vertical--medium">
+            <a href="#" class="link link--inverted link--medium">
+              Sobre
+            </a>
+          </div>
+          <div class="col col--sd-12 margin-vertical--medium">
+            <a href="#" class="link link--inverted link--medium">
+              Anuncie
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col col--sd-12 col--tb-6 col--md-3 padding--medium">
+        <div class="row">
+          <div class="col col--sd-12 padding-top--extra-large padding-bottom--large">
+            <div class="title title--inverted title--medium">
+              Imóveis
+            </div>
+          </div>
+          <div class="col col--sd-12 margin-vertical--medium">
+            <a href="#" class="link link--inverted link--medium">
+              Aluguel
+            </a>
+          </div>
+          <div class="col col--sd-12 margin-vertical--medium">
+            <a href="#" class="link link--inverted link--medium">
+              Venda
+            </a>
+          </div>
+          <div class="col col--sd-12 margin-vertical--medium">
+            <a href="#" class="link link--inverted link--medium">
+              Lançamentos
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col col--sd-12 col--tb-6 col--md-3 padding--medium">
+        <div class="row">
+          <div class="col col--sd-12 padding-top--extra-large padding-bottom--large">
+            <div class="title title--inverted title--medium">
+              Redes Sociais
+            </div>
+          </div>
+          <div class="col col--sd-12 margin-vertical--medium">
+            <a href="#" class="link link--inverted link--medium">
+              Lançamentos
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col col--sd-12 align--center padding-top--extra-large">
+        <div class="text text--inverted text--small">
+          Desenvolvido por desenvolvedores desenvoltos
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

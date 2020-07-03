@@ -1,0 +1,26 @@
+.about {
+  display: flex;
+  flex-wrap: wrap;
+  height: 600px;
+
+  .image{
+    height: 100%;
+  }
+}
+
+.about__content {
+  display: flex;
+  flex-wrap: wrap;
+  position: absolute;
+  height: 600px;
+  width: 100%;
+  align-items: center;
+}
+
+.about--description {
+  margin-top: -74px;
+}
+
+.about__background{
+  background-color: $background--medium;
+}

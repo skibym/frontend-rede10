@@ -1,0 +1,9 @@
+.hamburguer{
+  display: flex;
+  width: 100%;
+  flex-direction: row-reverse;
+
+  @media #{$medium-devices} {
+    display: none;
+  }
+}

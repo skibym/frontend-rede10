@@ -1,0 +1,18 @@
+.highlights{
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  border-radius: 5px;
+  overflow: hidden;
+  position: relative;
+}
+
+.highlights__title{
+  position: absolute;
+  bottom: 0;
+  color: $text--inverted;
+  font-family: $font-pattern;
+  font-weight: $text-weight--large;
+  font-size: $text--extra-large;
+  padding: $space--medium;
+}
